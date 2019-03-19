@@ -1,0 +1,180 @@
+#backgroundcolor{
+  top: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  z-index: -1;
+  -webkit-transition: background-color 3s ease-out;
+  -moz-transition: background-color 3s ease-out;
+  -o-transition: background-color 3s ease-out;
+  transition: background-color 3s ease-out;
+}
+
+
+.header {
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.2;
+  padding: 30px 20px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: grey;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: grey;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/* The main center button */
+section.colors{
+  box-shadow: 1px 1px 70px black;
+  margin:auto;
+  margin-top: 50px;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  border-radius: 100px;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+  opacity: 0.6;
+  -webkit-animation: slide 8s infinite;
+  animation: slide 8s infinite;
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  25% {
+    top: 150px;
+    left: 150px;
+  }
+  50% {
+    top: 300px;
+    left: 0px;
+  }
+  75% {
+    top: 150px;
+    left: -150px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
+
+
+.text{
+  color: lightgrey;
+  letter-spacing: 8px;
+  text-shadow: black 4px 5px 3px;
+}
+
+.footer {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  top:100;
+  background-color: inherit;
+  color: white;
+  text-align: center;
+  opacity: 0.5;
+}
+
+.footer p{
+  padding-top: 1.4%;
+  font-size: 25px;
+}
+
+.footer, .footer p {
+  bottom: 0;
+}
+
+#contactContainer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  opacity: 0.7;
+}
+
+#contactContainer form {
+  color: lightgrey;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#contactContainer form input {
+  border-radius: 8px;
+  height: 25%;
+  font-size: 0.9em;
+  font-style: italic;
+  background-color: lightgrey;
+  width: 300px;
+}
+
+#aboutBox {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 45%;
+  font-size: 1.5em;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: lightgrey;
+  opacity: 0.7;
+}
